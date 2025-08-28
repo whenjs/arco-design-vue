@@ -1,0 +1,336 @@
+/*
+  Global design tokens override for Arco Design (CSS variables)
+  - Defines your token system on :root
+  - Maps to Arco variables that components consume at runtime
+  - Must be loaded AFTER Arco base styles
+*/
+
+:root {
+  /* ===== 1) Your primitive + semantic tokens ===== */
+  --color-arcoblue-1: #e8f3ff;
+  --color-arcoblue-2: #c3dfff;
+  --color-arcoblue-3: #9dd0ff;
+  --color-arcoblue-4: #78bfff;
+  --color-arcoblue-5: #53adff;
+  --color-arcoblue-6: #2e9aff;
+  --color-arcoblue-7: #1a8cff;
+  --color-arcoblue-8: #077dff;
+  --color-arcoblue-9: #006eff;
+  --color-arcoblue-10: #0060f2;
+
+  --color-green-1: #e8ffee;
+  --color-green-2: #c3ffd9;
+  --color-green-3: #9dfec3;
+  --color-green-4: #78fead;
+  --color-green-5: #53fd98;
+  --color-green-6: #2efd82;
+  --color-green-7: #1afc76;
+  --color-green-8: #07fb6a;
+  --color-green-9: #00fa5e;
+  --color-green-10: #00f952;
+
+  --color-orange-1: #fff7e8;
+  --color-orange-2: #ffedc3;
+  --color-orange-3: #ffe39e;
+  --color-orange-4: #ffd878;
+  --color-orange-5: #ffce54;
+  --color-orange-6: #ffc42f;
+  --color-orange-7: #ffba1a;
+  --color-orange-8: #ffb007;
+  --color-orange-9: #ffa600;
+  --color-orange-10: #f99d00;
+
+  --color-red-1: #ffeee8;
+  --color-red-2: #ffcdc3;
+  --color-red-3: #fead9e;
+  --color-red-4: #fe8e78;
+  --color-red-5: #fd6e54;
+  --color-red-6: #fd4e2f;
+  --color-red-7: #fc2e1a;
+  --color-red-8: #fb0e07;
+  --color-red-9: #fa0000;
+  --color-red-10: #f90000;
+
+  --color-neutral-1: #fdfdfd;
+  --color-neutral-2: #f7f7f7;
+  --color-neutral-3: #f2f2f2;
+  --color-neutral-4: #ededed;
+  --color-neutral-5: #e8e8e8;
+  --color-neutral-6: #e2e2e2;
+  --color-neutral-7: #dcdcdc;
+  --color-neutral-8: #c5c5c5;
+  --color-neutral-9: #adadad;
+  --color-neutral-10: #979797;
+  --color-neutral-11: #818181;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-size-caption: 0.75rem;
+  --font-size-body-1: 0.75rem;
+  --font-size-body-2: 0.8125rem;
+  --font-size-body-3: 0.875rem;
+  --font-size-title-1: 1rem;
+  --font-size-title-2: 1.25rem;
+  --font-size-display-1: 1.5rem;
+  --font-size-display-2: 1.75rem;
+
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+
+  --size-0: 0px;
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-7: 1.75rem;
+  --size-8: 2rem;
+  --size-9: 2.25rem;
+  --size-10: 2.5rem;
+
+  --border-radius-none: 0;
+  --border-radius-small: 2px;
+  --border-radius-medium: 4px;
+  --border-radius-large: 8px;
+  --border-radius-circle: 50%;
+
+  --shadows-1-center: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+  --shadows-2-center: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+
+  /* ===== 2) Semantic tokens ===== */
+  --color-primary-1: var(--color-arcoblue-1);
+  --color-primary-2: var(--color-arcoblue-2);
+  --color-primary-3: var(--color-arcoblue-3);
+  --color-primary-4: var(--color-arcoblue-4);
+  --color-primary-5: var(--color-arcoblue-5);
+  --color-primary-6: var(--color-arcoblue-6);
+  --color-primary-7: var(--color-arcoblue-7);
+  --color-primary-8: var(--color-arcoblue-8);
+  --color-primary-9: var(--color-arcoblue-9);
+  --color-primary-10: var(--color-arcoblue-10);
+
+  --color-success-1: var(--color-green-1);
+  --color-success-6: var(--color-green-6);
+  --color-warning-1: var(--color-orange-1);
+  --color-warning-6: var(--color-orange-6);
+  --color-danger-1: var(--color-red-1);
+  --color-danger-6: var(--color-red-6);
+  --color-link-6: var(--color-arcoblue-6);
+
+  --color-bg-1: var(--color-neutral-2);
+  --color-bg-2: var(--color-neutral-1);
+  --color-bg-white: var(--color-white);
+
+  --color-fill-1: var(--color-neutral-5);
+  --color-fill-2: var(--color-neutral-4);
+  --color-fill-3: var(--color-neutral-3);
+  --color-fill-4: var(--color-neutral-2);
+
+  --color-border-1: var(--color-neutral-6);
+  --color-border-2: var(--color-neutral-5);
+  --color-border-3: var(--color-neutral-4);
+  --color-border-4: var(--color-neutral-3);
+
+  --color-text-1: var(--color-neutral-11);
+  --color-text-2: var(--color-neutral-9);
+  --color-text-3: var(--color-neutral-8);
+  --color-text-4: var(--color-neutral-7);
+  --color-text-white: var(--color-white);
+
+  /* ===== 3) Component tokens (optional references) ===== */
+  --component-button-primary-background-color: var(--color-primary-6);
+  --component-button-primary-text-color: var(--color-text-white);
+  --component-button-primary-background-color-disabled: var(--color-primary-2);
+  --component-button-primary-text-color-disabled: var(--color-text-white);
+  --component-button-secondary-background-color: var(--color-primary-1);
+  --component-button-secondary-text-color: var(--color-primary-6);
+  --component-button-secondary-border-color: var(--color-primary-6);
+
+  --component-input-background-color: var(--color-bg-2);
+  --component-input-text-color: var(--color-text-1);
+  --component-input-placeholder-color: var(--color-text-3);
+  --component-input-border-color: var(--color-border-2);
+  --component-input-border-color-focus: var(--color-primary-6);
+  --component-input-background-color-disabled: var(--color-fill-2);
+  --component-input-border-color-disabled: var(--color-border-2);
+  --component-input-text-color-disabled: var(--color-text-4);
+
+  --component-switch-background-color-on: var(--color-primary-6);
+  --component-switch-background-color-off: var(--color-fill-3);
+  --component-switch-handle-color: var(--color-white);
+
+  --component-checkbox-border-color: var(--color-border-2);
+  --component-checkbox-background-color-checked: var(--color-primary-6);
+  --component-checkbox-icon-color: var(--color-text-white);
+  --component-checkbox-background-color-disabled: var(--color-fill-2);
+  --component-checkbox-border-color-disabled: var(--color-border-2);
+  --component-checkbox-background-color-checked-disabled: var(--color-primary-2);
+
+  --component-tab-text-color: var(--color-text-2);
+  --component-tab-text-color-active: var(--color-primary-6);
+  --component-tab-indicator-color-active: var(--color-primary-6);
+  --component-tab-container-border-color: var(--color-border-3);
+
+  --component-tag-brand-background-color: var(--color-primary-1);
+  --component-tag-brand-text-color: var(--color-primary-6);
+  --component-tag-success-background-color: var(--color-success-1);
+  --component-tag-success-text-color: var(--color-success-6);
+  --component-tag-danger-background-color: var(--color-danger-1);
+  --component-tag-danger-text-color: var(--color-danger-6);
+  --component-tag-warning-background-color: var(--color-warning-1);
+  --component-tag-warning-text-color: var(--color-warning-6);
+
+  --component-link-text-color: var(--color-link-6);
+
+  --component-pagination-item-background-color: var(--color-bg-2);
+  --component-pagination-item-text-color: var(--color-text-2);
+  --component-pagination-item-border-color: var(--color-border-2);
+  --component-pagination-item-background-color-active: var(--color-primary-6);
+  --component-pagination-item-text-color-active: var(--color-text-white);
+  --component-pagination-item-border-color-active: var(--color-primary-6);
+  --component-pagination-item-text-color-disabled: var(--color-text-4);
+
+  --component-breadcrumb-text-color: var(--color-text-1);
+  --component-breadcrumb-text-color-current: var(--color-text-3);
+  --component-breadcrumb-separator-color: var(--color-text-3);
+
+  --component-skeleton-background-color: var(--color-fill-3);
+
+  /* ===== 4) Map to Arco runtime CSS vars (as RGB lists) ===== */
+  /* Palette to rgb tuples Arco expects under --<prefix>-<color>-N */
+  --arcoblue-1: 232, 243, 255;
+  --arcoblue-2: 195, 223, 255;
+  --arcoblue-3: 157, 208, 255;
+  --arcoblue-4: 120, 191, 255;
+  --arcoblue-5: 83, 173, 255;
+  --arcoblue-6: 46, 154, 255;
+  --arcoblue-7: 26, 140, 255;
+  --arcoblue-8: 7, 125, 255;
+  --arcoblue-9: 0, 110, 255;
+  --arcoblue-10: 0, 96, 242;
+
+  --green-1: 232, 255, 238;
+  --green-2: 195, 255, 217;
+  --green-3: 157, 254, 195;
+  --green-4: 120, 254, 173;
+  --green-5: 83, 253, 152;
+  --green-6: 46, 253, 130;
+  --green-7: 26, 252, 118;
+  --green-8: 7, 251, 106;
+  --green-9: 0, 250, 94;
+  --green-10: 0, 249, 82;
+
+  --orange-1: 255, 247, 232;
+  --orange-2: 255, 237, 195;
+  --orange-3: 255, 227, 158;
+  --orange-4: 255, 216, 120;
+  --orange-5: 255, 206, 84;
+  --orange-6: 255, 196, 47;
+  --orange-7: 255, 186, 26;
+  --orange-8: 255, 176, 7;
+  --orange-9: 255, 166, 0;
+  --orange-10: 249, 157, 0;
+
+  --red-1: 255, 238, 232;
+  --red-2: 255, 205, 195;
+  --red-3: 254, 173, 158;
+  --red-4: 254, 142, 120;
+  --red-5: 253, 110, 84;
+  --red-6: 253, 78, 47;
+  --red-7: 252, 46, 26;
+  --red-8: 251, 14, 7;
+  --red-9: 250, 0, 0;
+  --red-10: 249, 0, 0;
+
+  --gray-1: 253, 253, 253; /* neutral-1 */
+  --gray-2: 247, 247, 247; /* neutral-2 */
+  --gray-3: 242, 242, 242; /* neutral-3 */
+  --gray-4: 237, 237, 237; /* neutral-4 */
+  --gray-5: 232, 232, 232; /* neutral-5 */
+  --gray-6: 226, 226, 226; /* neutral-6 */
+  --gray-7: 220, 220, 220; /* neutral-7 */
+  --gray-8: 197, 197, 197; /* neutral-8 */
+  --gray-9: 173, 173, 173; /* neutral-9 */
+  --gray-10: 151, 151, 151; /* neutral-10 */
+
+  /* Arco runtime variables using current prefix (default: --)
+     Not needed here; Arco defines these. We only override palette and derived neutrals. */
+
+  --color-neutral-1: rgb(var(--gray-1));
+  --color-neutral-2: rgb(var(--gray-2));
+  --color-neutral-3: rgb(var(--gray-3));
+  --color-neutral-4: rgb(var(--gray-4));
+  --color-neutral-5: rgb(var(--gray-5));
+  --color-neutral-6: rgb(var(--gray-6));
+  --color-neutral-7: rgb(var(--gray-7));
+  --color-neutral-8: rgb(var(--gray-8));
+  --color-neutral-9: rgb(var(--gray-9));
+  --color-neutral-10: rgb(var(--gray-10));
+
+  /* text and border tokens are computed by Arco from neutrals; no need to override here */
+
+  --primary-1: var(--arcoblue-1);
+  --primary-2: var(--arcoblue-2);
+  --primary-3: var(--arcoblue-3);
+  --primary-4: var(--arcoblue-4);
+  --primary-5: var(--arcoblue-5);
+  --primary-6: var(--arcoblue-6);
+  --primary-7: var(--arcoblue-7);
+  --primary-8: var(--arcoblue-8);
+  --primary-9: var(--arcoblue-9);
+  --primary-10: var(--arcoblue-10);
+
+  --success-1: var(--green-1);
+  --success-2: var(--green-2);
+  --success-3: var(--green-3);
+  --success-4: var(--green-4);
+  --success-5: var(--green-5);
+  --success-6: var(--green-6);
+  --success-7: var(--green-7);
+  --success-8: var(--green-8);
+  --success-9: var(--green-9);
+  --success-10: var(--green-10);
+
+  --danger-1: var(--red-1);
+  --danger-2: var(--red-2);
+  --danger-3: var(--red-3);
+  --danger-4: var(--red-4);
+  --danger-5: var(--red-5);
+  --danger-6: var(--red-6);
+  --danger-7: var(--red-7);
+  --danger-8: var(--red-8);
+  --danger-9: var(--red-9);
+  --danger-10: var(--red-10);
+
+  --warning-1: var(--orange-1);
+  --warning-2: var(--orange-2);
+  --warning-3: var(--orange-3);
+  --warning-4: var(--orange-4);
+  --warning-5: var(--orange-5);
+  --warning-6: var(--orange-6);
+  --warning-7: var(--orange-7);
+  --warning-8: var(--orange-8);
+  --warning-9: var(--orange-9);
+  --warning-10: var(--orange-10);
+
+  --link-1: var(--arcoblue-1);
+  --link-2: var(--arcoblue-2);
+  --link-3: var(--arcoblue-3);
+  --link-4: var(--arcoblue-4);
+  --link-5: var(--arcoblue-5);
+  --link-6: var(--arcoblue-6);
+  --link-7: var(--arcoblue-7);
+  --link-8: var(--arcoblue-8);
+  --link-9: var(--arcoblue-9);
+  --link-10: var(--arcoblue-10);
+}
+
